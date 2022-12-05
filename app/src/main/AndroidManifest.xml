@@ -15,7 +15,7 @@
         <activity
             android:name=".HomeActivity"
             android:exported="false"
-            android:label="Home" >
+            android:label="Home" > 
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
