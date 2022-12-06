@@ -26,7 +26,7 @@ class MyAdapter(private val newsList: ArrayList<News>) : RecyclerView.Adapter<My
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return newsList.size
     }
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
