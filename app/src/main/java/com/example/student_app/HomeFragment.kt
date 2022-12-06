@@ -74,7 +74,50 @@ class HomeFragment : Fragment() {
 
     private fun dataIntialize(){
         newsArrayList= arrayListOf<News>()
-//        imageId= arrayOf()
+        imageId= arrayOf(
+            R.drawable.a,
+            R.drawable.b,
+            R.drawable.c,
+            R.drawable.d,
+            R.drawable.e,
+            R.drawable.f,
+            R.drawable.g,
+            R.drawable.h,
+            R.drawable.i,
+            R.drawable.j,
+        )
+
+        heading= arrayOf(
+            getString(R.string.head_1),
+            getString(R.string.head_2),
+            getString(R.string.head_3),
+            getString(R.string.head_4),
+            getString(R.string.head_5),
+            getString(R.string.head_6),
+            getString(R.string.head_7),
+            getString(R.string.head_8),
+            getString(R.string.head_9),
+            getString(R.string.head_10),
+        )
+
+        news= arrayOf(
+            getString(R.string.news_a),
+            getString(R.string.news_b),
+            getString(R.string.news_c),
+            getString(R.string.news_d),
+            getString(R.string.news_e),
+            getString(R.string.news_f),
+            getString(R.string.news_g),
+            getString(R.string.news_h),
+            getString(R.string.news_i),
+            getString(R.string.news_j),
+        )
+
+        for (i in imageId.indices)
+        {
+            val news=News(imageId[i],heading[i])
+            newsArrayList.add(news)
+        }
 
     }
 }
